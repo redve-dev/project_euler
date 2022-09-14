@@ -1,5 +1,4 @@
 from math import sqrt
-from time import time
 # https://stackoverflow.com/questions/2068372/fastest-way-to-list-all-primes-below-n/3035188#3035188
 def generate_primes_below_n(n):
     sieve=[ True ]* ( n//2 )
