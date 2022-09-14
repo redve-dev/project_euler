@@ -8,6 +8,11 @@ def generate_primes_below_n(n):
     return [2] + [2*i+1 for i in range(1, n//2) if sieve[i]]
 
 def is_prime(n):
+    carmichel_nums = {
+            341, 561, 1105, 1729, 2465, 2821
+            }
+    if n in carmichel_nums:
+        return False
     return pow(2, n-1, n) == 1
 
 n = 4_000 # sum of 4_000 primes is above 1e6
